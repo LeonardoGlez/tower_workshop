@@ -3,6 +3,7 @@
   hosts: ansible
   gather_facts: no
   become: yes
+  remote_user: root
   tasks:
     - name: create time stamp for play
       set_fact:
